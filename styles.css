@@ -11,6 +11,10 @@ body{
     transform: translate(110%, -50%);
     user-select: none;
 }
+#resume{
+    color: black;
+    text-decoration: none;
+}
 
 #work_div{
     font-family: monospace;
