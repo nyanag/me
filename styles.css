@@ -1,11 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 #intro,
 #content {
     text-align: center;
     font-family: monospace;
     position: absolute;
     top: 50%;
-    transform: translate(105%, -50%);
+    transform: translate(110%, -50%);
     user-select: none;
+}
+
+#work_div{
+    font-family: monospace;
+    position: absolute;
+    top: 50%;
+    transform: translate(40%, -50%);
+    user-select: none;
+    width: 65%;
+}
+
+.header{
+    font-size: 25px;
+    text-align:left;
 }
 
 #me {
@@ -30,6 +48,8 @@ nav {
     flex-direction: row;
     position: fixed;
     width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
 }
 
 nav p {
@@ -47,6 +67,8 @@ nav p {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
 }
 
 #github,
@@ -66,16 +88,27 @@ nav p {
     height: 6vh;
 }
 
+span{
+    font-style: italic;
+}
+
 @media(max-width:1024px){
     #intro,
     #content{
         transform: translate(55%,-50%);
+        padding: 20px;
     }
     #github{
         height: 5vh;
     }
     #twitter, #mail{
         height: 3vh;
+    }
+}
+@media (max-width:768px){
+    #intro{
+        transform: translate(35%,-50%);
+        padding: 20px;
     }
 }
 @media (max-width:700px) {
@@ -85,5 +118,21 @@ nav p {
         left: 55%;
         transform: translate(-50%, -50%);
         width: 100%;
+        padding: 20px;
+    }
+
+    #work_div{
+        width: 80%;
+        transform: translate(20%, -50%);
+    }
+}
+@media (max-width: 360px){
+    #work_div{
+        height: 100%;
+        width: 90%;
+        top: 65%;
+        overflow: scroll;
+        padding: 20px;
+        transform: translate(10%, -50%);
     }
 }
