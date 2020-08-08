@@ -1,10 +1,19 @@
-blog.addEventListener('click',function(){
-    intro.style.display = "none";
-    content.style.display = "block";
-    work_div.style.display = "none"
 
-    content.innerHTML = "Coming Soon!"
-})
+console.log('Hello there!')
+console.group('Lil secret here')
+console.log('Drag your cursor along the page for some fun!')
+console.log('Or even click! Did you double click!!')
+console.groupEnd();
+
+console.log('Feel free to reach out to me on ananyaganesh01@gmail.com!')
+
+// blog.addEventListener('click',function(){
+//     intro.style.display = "none";
+//     content.style.display = "block";
+//     work_div.style.display = "none"
+
+//     content.innerHTML = "Coming Soon!"
+// })
 
 about.addEventListener('click', function(){
     content.style.display = "none";
