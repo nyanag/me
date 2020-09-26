@@ -7,6 +7,10 @@ console.groupEnd();
 
 console.log('Feel free to reach out to me on ananyaganesh01@gmail.com!')
 
+about = document.getElementById('about')
+work = document.getElementById('work')
+content = document.getElementById('content')
+work_div = document.getElementById('work_div')
 // blog.addEventListener('click',function(){
 //     intro.style.display = "none";
 //     content.style.display = "block";

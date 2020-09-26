@@ -19,6 +19,12 @@ function draw() {
     // else{
     //     background(255)
     // }
+    fill(random(255),200,random(255))
+    triangle(mouseX,mouseY,mouseX+25,mouseY-25,mouseX-20,mouseY-10)
+    // fill(random(255),random(255),255)
+    // ellipse(mouseX,mouseY,20);
+    // ellipse(mouseX+40,mouseY-40,20);
+
 }
 
 function doubleClicked(){
